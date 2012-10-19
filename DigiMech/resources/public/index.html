@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Local Wall</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* table => Server Dtails | Messages | Actions */
+      table#action { 
+      border-width: 1px;
+      border-style: solid;
+      border-bottom-width:8px;
+      max-width:70%;
+      position:relative;
+      top: -30px;
+      left: 100px;
+      }
+      table#action tr td {
+      margin:2px;
+      padding:5px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header style="position:relative;
+		   top:-90px;">
+      <!--
+	  DigiMech CSS Logo 
+	  Ryan Kelker http://runexec.github.com
+	-->
+      <div id="logo-container" 
+	   class="row-fluid 
+		  label 
+		  label-inverse"
+	   style="position:relative;
+		  top:50px;">
+	<h1 id="logo"
+	    class="span1"
+	    style="position:relative;
+		   z-index:0;
+		   top:-20px;">
+	  <span style="position:relative;
+		       top:50px;
+		       span8">
+	    <h1 style="position:relative;
+		       z-index:9;
+		       top:12px;
+		       left:112px;">DigiMech</h1>
+	    <h6 class="span1 offset2" 
+		style="position:relative;
+		       top:-10px;
+		       left:100px;">
+	      Drag&nbsp;
+	      <a class="icon-ok 
+			label-info"> </a>&nbsp;Drop</h6>
+	  </span>
+	</h1>
+      </div>
+	<!-- End DigiMech CSS Logo -->
+    </header>
+    
+    <!-- Action Details Table -->
+    <table  
+       id="action"
+       class="table
+	      table-striped
+	      btn-large">
+      <tr>
+	<td class="span4 btn-inverse">
+	  <span class="btn-large"
+		style="span8
+		       padding:10px;
+		       margin:10px;">
+	    <span class="icon-leaf
+			 label-inverse"
+		  style="background-color:white;"></span>
+	    Server Details
+	  </span>
+	</td>
+	<td class="span4 btn-primary">
+	  <span class="btn-large"
+		style="padding:10px;
+		       margin:10px;">
+	    <span class="icon-th-list"
+		  style="background-color:white;"></span>
+	    Messages
+	  </span>
+	</td>
+	<td class="span4">
+	  <span class="btn-large"
+		style="padding:10px;
+		       margin:10px;">
+	    <span class="icon-ok"
+		  style="background-color:white;"></span>
+	    Actions
+	  </span>
+	</td>
+      </tr>
+      <tr>
+	<!-- Server Details Begin -->
+	<td class="span4">
+	  <ul class="span4 breadcrumb">
+	    <li class="span4"><span class="divider
+			     icon-chevron-right"></span>
+	      Configuration</li>
+	    <li class="span4"><span class="divider
+			     icon-chevron-right"></span>
+	      Web Status</li>
+	  </ul>
+	</td>
+	<td class="span4">
+	  User Panel Info
+	</td>
+	<td class="span4">
+	  Messages Panel info
+	</td>
+      </tr>
+    </table>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- End New Window Tempalte -->
+
+</body>
+</html>
