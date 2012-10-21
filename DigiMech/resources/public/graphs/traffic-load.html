@@ -1,0 +1,26 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <link rel="stylesheet" href="demos.css" type="text/css" media="screen" />
+    
+    <script src="../libraries/RGraph.common.core.js" ></script>
+    <script src="../libraries/RGraph.funnel.js" ></script>
+    <!--[if lt IE 9]><script src="../excanvas/excanvas.js"></script><![endif]-->
+    
+    <title>A basic Funnel chart</title>
+</head>
+<body>
+
+    <canvas id="cvs" width="80" height="200">[No canvas support]</canvas>
+    <script>
+        window.onload = function ()
+        {
+            var funnel = new RGraph.Funnel('cvs', [255,255,255,255]);
+            funnel.Set('chart.labels', ['Criticical','Very High','normal','idle']);
+            funnel.Set('chart.labels.sticks', false); 
+            funnel.Set('chart.text.boxed', true);
+            funnel.Draw();
+        }
+    </script>
+</body>
+</html>

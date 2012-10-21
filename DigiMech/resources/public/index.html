@@ -235,13 +235,19 @@
 			  position:absolute;
 			  left:70px;
 			  top:520px;">
-<table>
+<table style="width:100%;">
   <tr>
-    <td class="span4">
+    <td>
 	  <label class="span4 label label-info">REST Incoming</label>
 	  <iframe class="span4" style="border:none;overflow:hidden;" src="graphs/rest-incoming.html"></iframe>
 	  <label class="span4 label label-info">REST Outgoing</label>
 	  <iframe class="span4" style="border:none;overflow:hidden;" src="graphs/rest-outgoing.html"></iframe>
+	  <br /><p></p>
+    </td>
+    <td>
+      <label class="span4 label label-success">HTTP Request Code Overview</label>
+      <iframe class="span8" style="border:none;overflow:hidden;height:325px;" src="graphs/live-request-view.html"></iframe>
+      <br /><p></p>
     </td>
   </tr>
 </table>
