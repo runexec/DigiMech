@@ -1,234 +1,250 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Local Wall</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      /* table => Server Dtails | Messages | Actions */
-      table#action { 
-      border-width: 1px;
-      border-style: solid;
-      border-bottom-width:8px;
-      max-width:70%;
-      position:relative;
-      top: -30px;
-      left: 100px;
-      }
-      table#action tr td {
-      margin:2px;
-      padding:5px;
-      }
-      
-    </style>
-  </head>
-  <body>
-    <header style="position:relative;
-		   top:-90px;">
-      <!--
-	  DigiMech CSS Logo 
-	  Ryan Kelker http://runexec.github.com/DigiMech
-	-->
-      <div id="logo-container" 
-	   class="row-fluid 
-		  label 
-		  label-inverse"
-	   style="position:relative;
-		  top:50px;">
-	<h1 id="logo"
-	    class="span1"
-	    style="position:relative;
-		   z-index:0;
-		   top:-20px;">
-	  <span style="position:relative;
-		       top:50px;
-		       span8">
-	    <h1 style="position:relative;
-		       z-index:9;
-		       top:12px;
-		       left:112px;">DigiMech</h1>
-	    <h6 class="span1 offset2" 
-		style="position:relative;
-		       top:-10px;
-		       left:100px;">
-	      Drag&nbsp;
-	      <a class="icon-ok 
-			label-info"> </a>&nbsp;Drop</h6>
-	  </span>
-	</h1>
-      </div>
-	<!-- End DigiMech CSS Logo -->
-    </header>
-<h1>Ryan Kelker Work In Progress</h1>
-<div class="container hero-unit">
-    <!-- Action Details Table -->
-    <table  
-       id="action"
-       class="table
-	      table-striped
-	      btn-large">
-      <tr>
-	<td class="span4 btn-inverse">
-	  <span class="btn-large"
-		style="span8
-		       padding:10px;
-		       margin:10px;">
-	    <span class="icon-leaf
-			 label-inverse"
-		  style="background-color:white;"></span>
-	    Server Details
-	  </span>
-	</td>
-	<td class="span4 btn-inverse">
-	  <span class="btn-large"
-		style="padding:10px;
-		       margin:10px;">
-	    <span class="icon-th-list"
-		  style="background-color:white;"></span>
-	    Messages
-	  </span>
-	</td>
-	<td class="span4 row-fluid">
-	  <span class="btn-large"
-		style="padding:10px;
-		       margin:10px;">
-	    <span class="icon-ok"
-		  style="background-color:white;"></span>
-	    Actions
-	  </span>
-	</td>
-      </tr>
-      <tr>
-	<!-- Server Details Begin -->
-	<td class="row-fluid span4">
-	  <ul class="span4 breadcrumb">
-	    <li class="span4">
-	      <span class="divider
-			   icon-chevron-right"></span>
-	      All Services: <label class="icon-thumbs-up"></label>
-	    </li>
-	    <li class="offset4 span1" style="position:relative;left:40px;">
-	      <ul class="span3 breadcrumb">
-		<li><label class="icon-ok"></label></li>
-		<li>Network</li>
-		<br />
-		<li><label class="icon-ok"></label></li>
-		<li>CouchDB</li>
-		<br />
-		<li><label class="icon-ok"></label></li>
-		<li>File System</li>
-		<br />
-		<li><label class="icon-ok"></label></li>
-		<li>REST Server</li>
-		<br />
-	      </ul>
-	    </li>
-	    <li class="span4">
-	      <span style=""
-		    class="label label-info">My REST Network</span>
-	    </li>
-	    <li>
-	      Incoming: 2 mb/s
-	    </li>
-	    <li>
-	      Outgoing: 0.98 mb/s
-	    </li>
-	  </ul>
-	</td>
-	<td class="span4
-		   row-fluid">
-	  <table class="row
-			row-fluid
-			span4
-			table
-			table-striped">
-	    <tr style="width:100%;
-		       text-align:center;">
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <title>Local Wall</title>
+     <!-- Bootstrap -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <style>
+       /* table => Server Dtails | Messages | Actions */
+       table#action { 
+       border-width: 1px;
+       border-style: solid;
+       border-bottom-width:8px;
+       max-width:70%;
+       position:relative;
+       top: -30px;
+       left: 100px;
+       }
+       table#action tr td {
+       margin:2px;
+       padding:5px;
+       }
 
-	      <!-- Alarm Width Container -->
-	      <td class="span3
-			 row
-			 btn
-			 btn-small"
-		  style="text-align:center;">
-		<b>Critical</b>
-		<span class="span3
-			     btn
-			     btn-danger"
-		      style="padding:5px;
-			     font-weight:bold;
-			     font-size:16px;">2</span>
-	      </td>
-	      <!-- Alarm Width Container -->
-	      <td class="span3
-			 row
-			 btn
-			 btn-small"
-		  style="text-align:center;">
-		<b>Warning</b>
-		<span class="span3
-			     btn
-			     btn-warning"
-		      style="padding:5px;
-			     font-weight:bold;
-			     font-size:16px;">2</span>
-	      </td>
-	    </tr>
-	    <tr>
-	      <td>
-		Last Message:
-	      </td>
-	      <td>
-		00:30 AM
-	      </td>
-	    </tr>
-	    <tr>
-	      <td>
-		Cleared Counter:
-	      </td>
-	      <td>
-	      <b class="btn-info"
-		  style="padding:5px;">
-		34</b>
-	      </td>
-	    </tr>
-	    <tr>
-	      <td>Support:<br />runexec.github.com</td>
-	    </tr>
-	  </table>
-	<td class="span4">
-	  <label class="label label-info">
-	    REST API
-	  </label>
-	  <ul class="label-info" style="color:#ffffff;">
-	    <li>
-	      <a class="span4 btn-inverse" 
-		 style="text-align:left;padding:5px;" 
-		 href="#">
-		<b>Database <i class="icon-chevron-right
-				      label-info"></i></b> New EndPoint
-	      </a>
-	    </li>
-	    <li>
-	      <a class="span4 btn-primary" 
-		 style="text-align:left;padding:5px;" 
-		 href="#">
-		<b>Program <i class="icon-chevron-right
-				      label-danger"></i></b> New  EndPoint
-	      </a>
-	    </li>
-	    <li>
-	      <a class="span4 btn-inverse" 
-		 style="text-align:left;padding:5px;" 
-		 href="#">
-		<b>File URL <i class="icon-chevron-right
-				      label-info"></i></b> New EndPoint
-	      </a>
-	    </li>
-	  </ul>
-	</td>
-      </tr>
-    </table>
+     </style>
+   </head>
+   <body>
+     <header style="position:relative;
+		    top:-90px;">
+       <!--
+	   DigiMech CSS Logo 
+	   Ryan Kelker http://runexec.github.com/DigiMech
+	 -->
+       <div id="logo-container" 
+	    class="row-fluid 
+		   label 
+		   label-inverse"
+	    style="position:relative;
+		   top:50px;">
+	 <h1 id="logo"
+	     class="span1"
+	     style="position:relative;
+		    z-index:0;
+		    top:-20px;">
+	   <span style="position:relative;
+			top:50px;
+			span8">
+	     <h1 style="position:relative;
+			z-index:9;
+			top:12px;
+			left:112px;">DigiMech</h1>
+	     <h6 class="span1 offset2" 
+		 style="position:relative;
+			top:-10px;
+			left:100px;">
+	       Drag&nbsp;
+	       <a class="icon-ok 
+			 label-info"> </a>&nbsp;Drop</h6>
+	   </span>
+	 </h1>
+       </div>
+	 <!-- End DigiMech CSS Logo -->
+     </header>
+ <h1>Ryan Kelker Work In Progress</h1>
+ <div class="container hero-unit">
+     <!-- Action Details Table -->
+     <table  
+	id="action"
+	class="table
+	       table-striped
+	       btn-large">
+       <tr>
+	 <td class="span4 btn-inverse">
+	   <span class="btn-large"
+		 style="span8
+			padding:10px;
+			margin:10px;">
+	     <span class="icon-leaf
+			  label-inverse"
+		   style="background-color:white;"></span>
+	     Server Details
+	   </span>
+	 </td>
+	 <td class="span4 btn-inverse">
+	   <span class="btn-large"
+		 style="padding:10px;
+			margin:10px;">
+	     <span class="icon-th-list"
+		   style="background-color:white;"></span>
+	     Messages
+	   </span>
+	 </td>
+	 <td class="span4 row-fluid">
+	   <span class="btn-large"
+		 style="padding:10px;
+			margin:10px;">
+	     <span class="icon-ok"
+		   style="background-color:white;"></span>
+	     Actions
+	   </span>
+	 </td>
+       </tr>
+       <tr>
+	 <!-- Server Details Begin -->
+	 <td class="row-fluid span4">
+	   <ul class="span4 breadcrumb">
+	     <li class="span4">
+	       <span class="divider
+			    icon-chevron-right"></span>
+	       All Services: <label class="icon-thumbs-up"></label>
+	     </li>
+	     <li class="offset4 span1" style="position:relative;left:40px;">
+	       <ul class="span3 breadcrumb">
+		 <li><label class="icon-ok"></label></li>
+		 <li>Network</li>
+		 <br />
+		 <li><label class="icon-ok"></label></li>
+		 <li>CouchDB</li>
+		 <br />
+		 <li><label class="icon-ok"></label></li>
+		 <li>File System</li>
+		 <br />
+		 <li><label class="icon-ok"></label></li>
+		 <li>REST Server</li>
+		 <br />
+	       </ul>
+	     </li>
+	     <li>
+	       Incoming: 2 mb/s
+	     </li>
+	     <li>
+	       Outgoing: 0.98 mb/s
+	     </li>
+	   </ul>
+	 </td>
+	 <td class="span4
+		    row-fluid">
+	   <table class="row
+			 row-fluid
+			 span4
+			 table
+			 table-striped">
+	     <tr style="width:100%;
+			text-align:center;">
+
+	       <!-- Alarm Width Container -->
+	       <td class="span3
+			  row
+			  btn
+			  btn-small"
+		   style="text-align:center;">
+		 <b>Critical</b>
+		 <span class="span3
+			      btn
+			      btn-danger"
+		       style="padding:5px;
+			      font-weight:bold;
+			      font-size:16px;">2</span>
+	       </td>
+	       <!-- Alarm Width Container -->
+	       <td class="span3
+			  row
+			  btn
+			  btn-small"
+		   style="text-align:center;">
+		 <b>Warning</b>
+		 <span class="span3
+			      btn
+			      btn-warning"
+		       style="padding:5px;
+			      font-weight:bold;
+			      font-size:16px;">2</span>
+	       </td>
+	     </tr>
+	     <tr>
+	       <td>
+		 Last Message:
+	       </td>
+	       <td>
+		 00:30 AM
+	       </td>
+	     </tr>
+	     <tr>
+	       <td>
+		 Cleared Counter:
+	       </td>
+	       <td>
+	       <b class="btn-info"
+		   style="padding:5px;">
+		 34</b>
+	       </td>
+	     </tr>
+	     <tr>
+	       <td>Support:<br />runexec.github.com</td>
+	     </tr>
+	   </table>
+	 <td class="span4">
+	   <label class="label label-info">
+	     REST API
+	   </label>
+	   <ul class="label-info" style="color:#ffffff;">
+	     <li>
+	       <a class="span4 btn-inverse" 
+		  style="text-align:left;padding:5px;" 
+		  href="#">
+		 <b>Database <i class="icon-chevron-right
+				       label-info"></i></b> New EndPoint
+	       </a>
+	     </li>
+	     <li>
+	       <a class="span4 btn-primary" 
+		  style="text-align:left;padding:5px;" 
+		  href="#">
+		 <b>Program <i class="icon-chevron-right
+				       label-danger"></i></b> New  EndPoint
+	       </a>
+	     </li>
+	     <li>
+	       <a class="span4 btn-inverse" 
+		  style="text-align:left;padding:5px;" 
+		  href="#">
+		 <b>File URL <i class="icon-chevron-right
+				       label-info"></i></b> New EndPoint
+	       </a>
+	     </li>
+	   </ul>
+	 </td>
+       </tr>
+     </table>
+ </div>
+
+<div class="offset2 span9" style="background-color:white;
+			  padding:10px;
+			  border-width:10px;
+			  border-style:solid;
+			  border-color:white;
+			  position:absolute;
+			  left:70px;
+			  top:520px;">
+<table>
+  <tr>
+    <td class="span4">
+	  <label class="span4 label label-info">REST Incoming</label>
+	  <iframe class="span4" style="border:none;overflow:hidden;" src="graphs/rest-incoming.html"></iframe>
+	  <label class="span4 label label-info">REST Outgoing</label>
+	  <iframe class="span4" style="border:none;overflow:hidden;" src="graphs/rest-outgoing.html"></iframe>
+    </td>
+  </tr>
+</table>
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>

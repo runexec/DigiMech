@@ -1,0 +1,40 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <link rel="stylesheet" href="demos.css" type="text/css" media="screen" />
+    
+    <script src="../libraries/RGraph.common.core.js" ></script>
+    <script src="../libraries/RGraph.rscatter.js" ></script>
+    <!--[if lt IE 9]><script src="../excanvas/excanvas.js"></script><![endif]-->
+    
+</head>
+<body>
+  <h4>HTTP Request Overview</h4>
+  <br />
+  <canvas id="cvs" width="300" height="300">[No canvas support]</canvas>
+    
+    <script>
+        state = {}
+
+        window.onload = function ()
+        {
+            state.data = [];
+
+            state.rscatter = new RGraph.Rscatter('cvs', state.data);
+            state.rscatter.Set('chart.ymax', 599);
+            state.rscatter.Set('chart.labels.axes', 'n');
+            state.rscatter.Set('chart.labels', ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']);
+            state.rscatter.Draw();
+            
+            for (var i=0; i<50; ++i) {
+                setTimeout('state.data.push(['+(360 * Math.random())+','+ RGraph.random(0,400) +', ["black","red","blue","green","pink"][RGraph.random(0,5)]]);RGraph.Clear(state.rscatter.canvas);RGraph.Redraw();', 10 * i);
+            }
+        }
+    </script>
+
+    <p>        
+        <a href="./">&laquo; Back</a>
+    </p>
+
+</body>
+</html>
