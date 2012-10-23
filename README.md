@@ -3,9 +3,11 @@
 It's an instant RESTful service
 no programming required, drag, and drop functionality
 you can pipe any command, url, or db object/query to an http url that outputs valid json
+http://runexec.github.com/wip.png
 --/DigiMech/DigiMech/resources/public/index.html
 bootstrap
 noir
 clojure
 couchdb
+
 </pre>
